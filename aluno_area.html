@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Aluno | Karatê Verde</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+<body>
+
+    <header class="header">
+        <div class="logo">🥋 Área do Aluno</div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Voltar ao Site</a></li>
+                <li><a href="#" id="logoutBtn" class="cta-nav"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="aluno-main">
+        <section class="aluno-welcome">
+            <h1 class="section-title"><i class="fas fa-user-graduate"></i> Olá, Aluno(a)!</h1>
+            <p>Seja bem-vindo(a) à sua área de acesso rápido. Aqui você encontra as informações essenciais para o seu treino.</p>
+        </section>
+
+        <section class="aluno-tools-grid">
+            
+            <div class="tool-card aluno-blue">
+                <i class="fas fa-clock fa-4x"></i>
+                <h3>Horário das Aulas</h3>
+                <p>Consulte a grade de treinos e chegue sempre na hora!</p>
+                <a href="aulas.html" class="aluno-link">
+                    Ver Horários Completos
+                </a>
+            </div>
+            
+            <div class="tool-card aluno-yellow">
+                <i class="fas fa-images fa-4x"></i>
+                <h3>Fotos Recentes</h3>
+                <p>Veja as últimas fotos de eventos, treinos e graduações.</p>
+                <a href="galeria.html" class="aluno-link">
+                    Acessar Galeria
+                </a>
+            </div>
+            
+            <div class="tool-card aluno-green">
+                <i class="fas fa-user-edit fa-4x"></i>
+                <h3>Atualizar Cadastro</h3>
+                <p>Precisa mudar telefone ou endereço? Atualize seus dados aqui.</p>
+                <a href="cadastro.html" class="aluno-link">
+                    Ir para o Formulário de Cadastro
+                </a>
+            </div>
+
+            <div class="tool-card aluno-red">
+                <i class="fas fa-bullhorn fa-4x"></i>
+                <h3>Avisos Importantes</h3>
+                <p>Datas de exames de faixa, feriados e eventos especiais.</p>
+                <a href="#avisos" class="aluno-link">
+                    Ver Mural de Avisos
+                </a>
+            </div>
+
+        </section>
+        
+        <section id="avisos" class="mural-avisos">
+            <h2 class="section-title">Mural de Avisos</h2>
+            <div class="aviso-item">
+                <p class="data"><i class="far fa-calendar-alt"></i> 15/Dez</p>
+                <p class="conteudo"><strong>Fechamento Temporário:</strong> A academia estará fechada nos dias 24/12 e 25/12 devido às festas de fim de ano.</p>
+            </div>
+            <div class="aviso-item">
+                <p class="data"><i class="far fa-calendar-alt"></i> 20/Jan</p>
+                <p class="conteudo"><strong>Próximo Exame de Faixa:</strong> Inscrições abertas para o exame de faixas coloridas. Consulte o Sensei para confirmar sua aptidão!</p>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <p>Acesso Restrito ao Aluno. Para dúvidas, contate a secretaria.</p>
+    </footer>
+
+    <script src="js/login-script.js"></script> 
+    </body>
+</html>

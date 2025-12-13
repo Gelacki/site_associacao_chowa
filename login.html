@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Acesso | Karatê Verde</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/login-style.css"> </head>
+<body>
+
+    <main class="login-main">
+        <div class="login-container">
+            <div class="login-header">
+                <i class="fas fa-user-lock fa-3x icon-green"></i>
+                <h1 class="section-title">Acesso Restrito</h1>
+                <p>Entre com suas credenciais para acessar a área de membros ou administração.</p>
+            </div>
+            
+            <form id="loginForm" class="login-form">
+                <div class="input-group">
+                    <label for="username"><i class="fas fa-user"></i> Usuário/Email:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password"><i class="fas fa-lock"></i> Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <button type="submit" class="cta-button login-button">Entrar</button>
+                
+                <p class="error-message" id="errorMessage"></p>
+                
+            </form>
+
+            <div class="login-footer">
+                <a href="cadastro.html">Ainda não sou aluno(a). Quero me cadastrar.</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/login-script.js"></script> </body>
+</html>

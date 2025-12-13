@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Associação de Karatê</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">🥋 Karatê Verde</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">A Associação</a></li>
+                <li><a href="aulas.html">Aulas/Horários</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li class="active"><a href="contato.html">Contato</a></li>
+                <li><a href="cadastro.html" class="cta-nav">Matricule-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contato-main">
+        
+        <section class="page-intro-contato">
+            <h1 class="section-title">Fale Conosco</h1>
+            <p>Tire suas dúvidas sobre aulas, horários ou eventos. Estamos prontos para te ajudar!</p>
+        </section>
+
+        <section class="contato-container">
+            
+            <div class="contact-info">
+                <h2 class="sub-title"><i class="fas fa-id-card-alt icon-green"></i> Informações Diretas</h2>
+
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Endereço do Dojo</h4>
+                    <p>Rua Exemplo, 123 - Bairro Karatê<br>Cidade, Estado - CEP 12345-678</p>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <h4>Telefone / WhatsApp</h4>
+                    <p>(XX) 9XXXX-XXXX (Secretaria)<br>(XX) 9XXXX-XXXX (Sensei [Nome])</p>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>secretaria@karateverde.com.br<br>contato@karateverde.com.br</p>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <h4>Horário de Atendimento</h4>
+                    <p>Segunda a Sexta: 14h00 às 21h00<br>Sábados: 08h30 às 12h00</p>
+                </div>
+
+            </div>
+
+            <div class="contact-form-block">
+                <h2 class="sub-title"><i class="fas fa-paper-plane icon-green"></i> Envie uma Mensagem</h2>
+                
+                <form action="#" method="POST" class="contact-form">
+                    <div class="input-group-contact">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    
+                    <div class="input-group-contact">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="input-group-contact">
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                    </div>
+
+                    <div class="input-group-contact">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cta-button">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2 class="section-title"><i class="fas fa-map-marked-alt icon-green"></i> Onde Estamos</h2>
+            <p>Visite-nos para conhecer nosso Dojo e fazer uma aula experimental gratuita.</p>
+            
+            <div class="map-embed">
+                <iframe 
+                    src="LINK_DE_INCORPORACAO_DO_GOOGLE_MAPS" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Associação de Karatê. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

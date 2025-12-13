@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Admin | Professores</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+<body>
+
+    <header class="header">
+        <div class="logo">🥋 Admin Karatê</div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Voltar ao Site</a></li>
+                <li><a href="#" id="logoutBtn" class="cta-nav"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="admin-main">
+        <section class="admin-welcome">
+            <h1 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Bem-vindo(a), Sensei!</h1>
+            <p>Este é o seu painel de controle. Gerencie alunos, horários e conteúdo do site.</p>
+        </section>
+
+        <section class="admin-tools-grid">
+            
+            <div class="tool-card admin-green">
+                <i class="fas fa-file-excel fa-4x"></i>
+                <h3>Gestão de Cadastros</h3>
+                <p>Acesse e edite o banco de dados dos alunos e professores.</p>
+                <a href="LINK_DIRETO_PARA_O_GOOGLE_SHEETS" target="_blank" class="admin-link">
+                    Acessar Planilha BD <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+            
+            <div class="tool-card admin-blue">
+                <i class="fas fa-calendar-alt fa-4x"></i>
+                <h3>Atualizar Horários</h3>
+                <p>Modifique a tabela de aulas e horários da turma.</p>
+                <a href="aulas.html" class="admin-link">
+                    Editar Página de Aulas
+                </a>
+            </div>
+            
+            <div class="tool-card admin-yellow">
+                <i class="fas fa-camera-retro fa-4x"></i>
+                <h3>Gerenciar Galeria</h3>
+                <p>Faça upload de novas fotos de eventos e competições.</p>
+                <a href="galeria.html" class="admin-link">
+                    Organizar Fotos
+                </a>
+            </div>
+
+            <div class="tool-card admin-red">
+                <i class="fas fa-cogs fa-4x"></i>
+                <h3>Configurações do Site</h3>
+                <p>Ajustes gerais de design e informações da associação.</p>
+                <a href="#" class="admin-link">
+                    Ajustar Configurações
+                </a>
+            </div>
+
+        </section>
+        
+    </main>
+
+    <footer class="footer admin-footer">
+        <p>Acesso Administrativo. Todos os dados são confidenciais.</p>
+    </footer>
+
+    <script src="js/admin-script.js"></script> </body>
+</html>

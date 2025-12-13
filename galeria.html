@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos | Associação de Karatê</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+<body>
+
+    <header class="header">
+        <div class="logo">🥋 Karatê Verde</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">A Associação</a></li>
+                <li class="active"><a href="galeria.html">Galeria</a></li>
+                <li><a href="cadastro.html" class="cta-nav">Matricule-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gallery-main">
+        <section class="gallery-hero">
+            <h1 class="section-title">Momentos de Dedicação e Conquista</h1>
+            <p>Explore as fotos de nossos treinos, graduações e competições.</p>
+        </section>
+
+        <section class="gallery-filters">
+            <button class="filter-btn active" data-category="all">Todas</button>
+            <button class="filter-btn" data-category="treinos">Treinos</button>
+            <button class="filter-btn" data-category="graduacoes">Graduações</button>
+            <button class="filter-btn" data-category="competicoes">Competições</button>
+            <button class="filter-btn" data-category="eventos">Eventos Especiais</button>
+        </section>
+
+        <section class="photo-gallery">
+            
+            <div class="gallery-item treinos">
+                <img src="caminho/para/foto1.jpg" alt="Alunos em treino de Kihon" loading="lazy">
+                <div class="overlay">Treino de Base (Kihon)</div>
+            </div>
+
+            <div class="gallery-item graduacoes">
+                <img src="caminho/para/foto2.jpg" alt="Cerimônia de troca de faixa" loading="lazy">
+                <div class="overlay">Faixa Amarela</div>
+            </div>
+
+            <div class="gallery-item competicoes">
+                <img src="caminho/para/foto3.jpg" alt="Atleta em kumitê" loading="lazy">
+                <div class="overlay">Kumitê - Campeonato Estadual</div>
+            </div>
+
+            <div class="gallery-item treinos">
+                <img src="caminho/para/foto4.jpg" alt="Alongamento em grupo" loading="lazy">
+                <div class="overlay">Aquecimento Matinal</div>
+            </div>
+
+            </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Associação de Karatê. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/gallery-filter.js"></script>
+</body>
+</html>
