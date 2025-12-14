@@ -1,8 +1,4 @@
-/* ==========================================================================
-   1. CONFIGURAÇÕES GLOBAIS E VARIÁVEIS
-   ========================================================================== */
-
-/* Definição das cores principais do tema para fácil manutenção */
+/* Definição de Variáveis para o Tema Verde */
 :root {
     --color-dark-green: #1E4F28; /* Verde Floresta Escuro (Fundo/Header) */
     --color-light-green: #90EE90; /* Verde Claro (Destaques) */
@@ -11,7 +7,6 @@
     --color-text: #EFEFEF;
 }
 
-/* Estilos base para todo o corpo do site */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,11 +15,9 @@ body {
     color: var(--color-text);
 }
 
-/* ==========================================================================
-   2. CABEÇALHO E NAVEGAÇÃO (HEADER)
-   ========================================================================== */
-
-/* Estilo do cabeçalho principal, fixo no topo da página */
+/* ---------------------------------- */
+/* HEADER E NAVEGAÇÃO */
+/* ---------------------------------- */
 .header {
     background-color: var(--color-dark-green);
     color: var(--color-white);
@@ -34,13 +27,11 @@ body {
     align-items: center;
 }
 
-/* Estilo do logo no cabeçalho */
 .logo {
     font-size: 1.5em;
     font-weight: bold;
 }
 
-/* Estilo da lista de navegação (menu) */
 nav ul {
     list-style: none;
     display: flex;
@@ -48,7 +39,6 @@ nav ul {
     padding: 0;
 }
 
-/* Estilo dos links do menu */
 nav ul li a {
     color: var(--color-white);
     text-decoration: none;
@@ -57,12 +47,11 @@ nav ul li a {
     transition: background-color 0.3s;
 }
 
-/* Efeito ao passar o mouse sobre os links do menu */
 nav ul li a:hover {
     background-color: #2c663a;
 }
 
-/* Estilo especial para o botão "Matricule-se" na navegação */
+/* Botão CTA na Navegação */
 .cta-nav {
     background-color: var(--color-accent-green) !important;
     color: #000 !important;
@@ -70,11 +59,9 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* ==========================================================================
-   3. SEÇÃO HERO (BANNER PRINCIPAL DA HOME)
-   ========================================================================== */
-
-/* Estilo do banner principal com imagem de fundo e sobreposição de cor */
+/* ---------------------------------- */
+/* SEÇÃO HERO (ABERTURA) */
+/* ---------------------------------- */
 .hero-section {
     background: url('caminho/para/sua/foto-de-karate.jpg') no-repeat center center/cover;
     height: 60vh;
@@ -88,19 +75,17 @@ nav ul li a:hover {
     box-shadow: inset 0 0 0 1000px rgba(30, 79, 40, 0.6); /* Overlay verde escuro */
 }
 
-/* Título principal dentro do Hero */
 .hero-section h1 {
     font-size: 3em;
     margin-bottom: 10px;
 }
 
-/* Parágrafo de subtítulo dentro do Hero */
 .hero-section p {
     font-size: 1.2em;
     margin-bottom: 30px;
 }
 
-/* Estilo padrão para botões de "Call to Action" (Chamada para Ação) */
+/* Estilo do Botão CTA */
 .cta-button {
     background-color: var(--color-accent-green);
     color: #000;
@@ -118,11 +103,9 @@ nav ul li a:hover {
     background-color: var(--color-light-green);
 }
 
-/* ==========================================================================
-   4. SEÇÕES DA PÁGINA INICIAL (HOME)
-   ========================================================================== */
-
-/* Seção de Destaques (ex: "Nossos Pilares") */
+/* ---------------------------------- */
+/* DESTAQUES E ÍCONES */
+/* ---------------------------------- */
 .highlights {
     padding: 50px 5%;
     text-align: center;
@@ -136,14 +119,12 @@ nav ul li a:hover {
     margin-bottom: 40px;
 }
 
-/* Container para os cartões de destaque */
 .highlight-cards {
     display: flex;
     justify-content: space-around;
     gap: 20px;
 }
 
-/* Estilo individual de cada cartão de destaque */
 .card {
     flex: 1;
     padding: 20px;
@@ -153,13 +134,14 @@ nav ul li a:hover {
     background-color: #fff;
 }
 
-/* Cor dos ícones dentro dos cartões */
 .icon-green {
     color: var(--color-dark-green); /* Ícone no verde principal */
     margin-bottom: 15px;
 }
 
-/* Seção de pré-visualização da galeria na página inicial */
+/* ---------------------------------- */
+/* GALERIA PREVIEW */
+/* ---------------------------------- */
 .photo-preview {
     padding: 50px 5%;
     text-align: center;
@@ -167,7 +149,6 @@ nav ul li a:hover {
     color: #333;
 }
 
-/* Grade para as fotos de preview */
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -175,7 +156,6 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-/* Item individual da grade de fotos */
 .photo-item {
     height: 200px;
     background-color: #ccc; /* Placeholder */
@@ -184,7 +164,6 @@ nav ul li a:hover {
     /* background: url('caminho/foto-1.jpg') no-repeat center center/cover; */
 }
 
-/* Link "Ver Galeria Completa" */
 .view-gallery-link {
     color: var(--color-dark-green);
     text-decoration: none;
@@ -196,7 +175,8 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilo para os itens da galeria na página de galeria */
+    
+
 .treino {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -204,25 +184,13 @@ nav ul li a:hover {
     height: 100px;
 }
 
-/* Estilo da imagem dentro de um item da galeria */
-.gallery-item img {
-    /* Correção: A imagem deve ocupar 100% do contêiner */
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
-    transition: transform 0.4s ease;
-}
 
-/* Efeito de zoom ao passar o mouse sobre a imagem da galeria */
-.gallery-item:hover img {
-    transform: scale(1.1); /* Efeito de zoom suave no hover */
-}
 
-/* ==========================================================================
-   5. BANNER E FOOTER (RODAPÉ)
-   ========================================================================== */
 
-/* Banner de chamada para ação no final da página */
+
+/* ---------------------------------- */
+/* JOIN US BANNER (Chamada Final) */
+/* ---------------------------------- */
 .join-us-banner {
     background-color: var(--color-dark-green);
     padding: 40px 5%;
@@ -230,7 +198,6 @@ nav ul li a:hover {
     color: var(--color-white);
 }
 
-/* Estilo para um botão secundário (cor invertida) */
 .secondary-cta {
     background-color: var(--color-white);
     color: var(--color-dark-green);
@@ -241,7 +208,9 @@ nav ul li a:hover {
     color: #000;
 }
 
-/* Estilo do rodapé do site */
+/* ---------------------------------- */
+/* FOOTER */
+/* ---------------------------------- */
 .footer {
     background-color: #333;
     color: #fff;
@@ -255,9 +224,9 @@ nav ul li a:hover {
     margin: 0 10px;
 }
 
-/* ==========================================================================
-   6. PÁGINA DE CADASTRO
-   ========================================================================== */
+/* ---------------------------------- */
+/* CADASTRO ESPECÍFICO */
+/* ---------------------------------- */
 
 .cadastro-main {
     padding: 40px 5%;
@@ -277,7 +246,6 @@ nav ul li a:hover {
     margin: 0 auto 30px auto;
 }
 
-/* Caixa de informações destacada na página de cadastro */
 .info-box {
     background-color: var(--color-light-green); /* Destaque verde claro */
     color: #000;
@@ -310,7 +278,7 @@ nav ul li a:hover {
     color: var(--color-dark-green);
 }
 
-/* Container para o formulário (seja um iframe ou formulário normal) */
+/* CONTAINER DO FORMULÁRIO EMBED */
 .form-container {
     background-color: var(--color-white);
     padding: 20px;
@@ -318,7 +286,6 @@ nav ul li a:hover {
     box-shadow: 0 0 15px rgba(30, 79, 40, 0.1); /* Sombra suavemente verde */
 }
 
-/* Título dentro do container de formulário */
 .form-title {
     color: var(--color-dark-green);
     border-bottom: 2px solid var(--color-accent-green);
@@ -327,7 +294,8 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* Aviso de isenção de responsabilidade ou nota de rodapé do formulário */
+/* O IFRAME já tem largura de 100% no HTML */
+
 .disclaimer {
     text-align: center;
     margin-top: 20px;
@@ -335,9 +303,9 @@ nav ul li a:hover {
     color: #666;
 }
 
-/* ==========================================================================
-   7. PÁGINA DE AULAS/HORÁRIOS
-   ========================================================================== */
+/* ---------------------------------- */
+/* HORÁRIOS ESPECÍFICOS (Tabela) */
+/* ---------------------------------- */
 
 .horarios-main {
     padding: 40px 5%;
@@ -351,13 +319,11 @@ nav ul li a:hover {
     color: #333;
 }
 
-/* Container da tabela para permitir rolagem em telas pequenas */
 .schedule-table-container {
     overflow-x: auto; /* Permite rolagem lateral em telas pequenas */
     margin-bottom: 50px;
 }
 
-/* Estilo principal da tabela de horários */
 .schedule-table {
     width: 100%;
     border-collapse: collapse;
@@ -367,7 +333,6 @@ nav ul li a:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Cabeçalho da tabela */
 .schedule-table thead tr {
     background-color: var(--color-dark-green); /* Cabeçalho escuro */
     color: var(--color-white);
@@ -375,14 +340,13 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* Células do cabeçalho e do corpo da tabela */
 .schedule-table th, 
 .schedule-table td {
     padding: 12px 15px;
     border: 1px solid #ddd;
 }
 
-/* Efeito de listras (zebrado) para melhor legibilidade das linhas */
+/* Zebra Stripes (Listras para melhor leitura) */
 .schedule-table tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
 }
@@ -393,7 +357,7 @@ nav ul li a:hover {
     transition: background-color 0.3s;
 }
 
-/* Destaques com borda colorida para identificar níveis de aula */
+/* Destaques de Cor por Nível (Opcional, mas útil) */
 .schedule-table tbody tr.beginner {
     border-left: 5px solid yellow;
 }
@@ -404,7 +368,7 @@ nav ul li a:hover {
     border-left: 5px solid red; /* Cor tradicional da faixa preta ou graduação máxima */
 }
 
-/* Estilos para tornar a tabela responsiva em telas menores (efeito de empilhamento) */
+/* Responsividade para a Tabela (Empilhamento em telas pequenas) */
 @media screen and (max-width: 600px) {
     .schedule-table thead {
         display: none; /* Esconde o cabeçalho original */
@@ -427,7 +391,7 @@ nav ul li a:hover {
     }
     
     .schedule-table td::before {
-        /* Adiciona o rótulo da coluna (do cabeçalho) como um pseudo-elemento */
+        /* Adiciona o rótulo da coluna (do cabeçalho) */
         content: attr(data-label);
         position: absolute;
         left: 6px;
@@ -440,7 +404,7 @@ nav ul li a:hover {
     }
 }
 
-/* Bloco de chamada para ação no final da página de horários */
+/* Chamada para Ação (CTA) ao final dos horários */
 .cta-horarios {
     text-align: center;
     padding: 30px;
@@ -449,9 +413,9 @@ nav ul li a:hover {
     margin-top: 30px;
 }
 
-/* ==========================================================================
-   8. PÁGINA SOBRE NÓS
-   ========================================================================== */
+/* ---------------------------------- */
+/* SOBRE NÓS ESPECÍFICO */
+/* ---------------------------------- */
 
 .sobre-main {
     padding: 40px 5%;
@@ -465,7 +429,7 @@ nav ul li a:hover {
     color: #333;
 }
 
-/* Bloco de conteúdo com texto de um lado e imagem do outro */
+/* Blocos de Conteúdo com Imagem Lateral */
 .content-block {
     display: flex;
     gap: 40px;
@@ -476,12 +440,10 @@ nav ul li a:hover {
     background-color: #f7f7f7;
 }
 
-/* Parte do texto no bloco de conteúdo */
 .text-content {
     flex: 2;
 }
 
-/* Parte da imagem no bloco de conteúdo */
 .image-content {
     flex: 1;
     min-width: 250px;
@@ -496,7 +458,6 @@ nav ul li a:hover {
     display: block;
 }
 
-/* Subtítulo padrão para seções internas */
 .sub-title {
     color: var(--color-dark-green);
     border-bottom: 2px solid var(--color-accent-green);
@@ -508,7 +469,7 @@ nav ul li a:hover {
     margin-right: 10px;
 }
 
-/* Seção específica de Filosofia e Valores */
+/* Seção Filosofia e Valores */
 .philosophy-section {
     text-align: center;
     padding: 40px 0;
@@ -525,7 +486,6 @@ nav ul li a:hover {
     margin: 0 auto 30px auto;
 }
 
-/* Grade para os cartões de valores */
 .values-grid {
     display: flex;
     justify-content: space-around;
@@ -533,7 +493,6 @@ nav ul li a:hover {
     margin-top: 30px;
 }
 
-/* Cartão individual de valor (ex: Disciplina, Respeito) */
 .value-card {
     flex: 1;
     padding: 20px;
@@ -552,7 +511,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-/* Seção para apresentar os instrutores */
+/* Seção de Instrutores */
 .instructors-section {
     text-align: center;
     padding: 50px 0;
@@ -566,7 +525,6 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-/* Cartão individual para cada instrutor */
 .instructor-card {
     width: 280px;
     padding: 15px;
@@ -577,7 +535,6 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* Foto do instrutor */
 .instructor-card img {
     width: 100%;
     max-height: 250px;
@@ -592,14 +549,13 @@ nav ul li a:hover {
     margin-bottom: 5px;
 }
 
-/* Graduação/faixa do instrutor */
 .instructor-card .rank {
     font-style: italic;
     color: #666;
     margin-bottom: 10px;
 }
 
-/* Responsividade para a página Sobre Nós */
+/* Responsividade Básica */
 @media screen and (max-width: 768px) {
     .content-block {
         flex-direction: column;
@@ -613,9 +569,9 @@ nav ul li a:hover {
     }
 }
 
-/* ==========================================================================
-   9. PÁGINA DE LOGIN
-   ========================================================================== */
+/* ---------------------------------- */
+/* LOGIN ESPECÍFICO */
+/* ---------------------------------- */
 
 .login-main {
     display: flex;
@@ -626,7 +582,6 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-/* Container do formulário de login */
 .login-container {
     background-color: var(--color-white);
     padding: 40px;
@@ -670,13 +625,11 @@ nav ul li a:hover {
     box-sizing: border-box;
 }
 
-/* Botão de entrar */
 .login-button {
     width: 100%;
     margin-top: 10px;
 }
 
-/* Rodapé do formulário de login com link para voltar */
 .login-footer a {
     color: var(--color-dark-green);
     text-decoration: none;
@@ -688,16 +641,15 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Mensagem de erro no login */
 .error-message {
     color: red;
     margin-top: 15px;
     font-weight: bold;
 }
 
-/* ==========================================================================
-   10. PAINEL DO ADMINISTRADOR (DASHBOARD)
-   ========================================================================== */
+/* ---------------------------------- */
+/* ADMIN DASHBOARD ESTILOS */
+/* ---------------------------------- */
 
 .admin-main {
     padding: 40px 5%;
@@ -706,7 +658,6 @@ nav ul li a:hover {
     color: #333;
 }
 
-/* Bloco de boas-vindas do admin */
 .admin-welcome {
     text-align: center;
     margin-bottom: 50px;
@@ -721,14 +672,12 @@ nav ul li a:hover {
     font-size: 2.5em;
 }
 
-/* Grade para as ferramentas do admin */
 .admin-tools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
-/* Cartão de ferramenta individual */
 .tool-card {
     background-color: var(--color-white);
     padding: 30px;
@@ -752,7 +701,6 @@ nav ul li a:hover {
     margin-top: 0;
 }
 
-/* Link dentro do cartão de ferramenta */
 .admin-link {
     display: block;
     margin-top: 15px;
@@ -763,7 +711,7 @@ nav ul li a:hover {
     color: var(--color-white);
 }
 
-/* Cores específicas para cada tipo de cartão de ferramenta */
+/* Cores dos cartões (mantendo o verde como base) */
 .admin-green { border-bottom: 5px solid var(--color-dark-green); }
 .admin-green i { color: var(--color-dark-green); }
 .admin-green .admin-link { background-color: var(--color-dark-green); }
@@ -780,16 +728,15 @@ nav ul li a:hover {
 .admin-red i { color: #c0392b; }
 .admin-red .admin-link { background-color: #c0392b; }
 
-/* Rodapé específico para páginas de admin */
 .admin-footer {
     background-color: #2c3e50;
     color: #fff;
     font-size: 0.9em;
 }
 
-/* ==========================================================================
-   11. ÁREA DO ALUNO
-   ========================================================================== */
+/* ---------------------------------- */
+/* ÁREA DO ALUNO ESTILOS */
+/* ---------------------------------- */
 
 .aluno-main {
     padding: 40px 5%;
@@ -798,7 +745,6 @@ nav ul li a:hover {
     color: #333;
 }
 
-/* Bloco de boas-vindas do aluno */
 .aluno-welcome {
     text-align: center;
     margin-bottom: 50px;
@@ -813,7 +759,6 @@ nav ul li a:hover {
     font-size: 2.5em;
 }
 
-/* Grade de ferramentas da área do aluno */
 .aluno-tools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -821,7 +766,7 @@ nav ul li a:hover {
     margin-bottom: 60px;
 }
 
-/* Link dentro do cartão de ferramenta do aluno */
+/* Reutilizamos tool-card e criamos cores temáticas */
 .aluno-link {
     display: block;
     margin-top: 15px;
@@ -832,7 +777,7 @@ nav ul li a:hover {
     color: var(--color-white);
 }
 
-/* Cores temáticas para os cartões da área do aluno */
+/* Cores dos Cartões (Mais suaves, relacionadas ao Karatê) */
 .aluno-green { border-bottom: 5px solid var(--color-dark-green); }
 .aluno-green i { color: var(--color-dark-green); }
 .aluno-green .aluno-link { background-color: var(--color-dark-green); } /* Cadastro / Faixa Verde */
@@ -850,7 +795,7 @@ nav ul li a:hover {
 .aluno-red .aluno-link { background-color: #dc3545; } /* Avisos / Destaque */
 
 
-/* Estilo para o Mural de Avisos (usado na área do aluno e na gestão de avisos) */
+/* MURAL DE AVISOS */
 .mural-avisos {
     background-color: var(--color-white);
     padding: 30px;
@@ -863,7 +808,6 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Item individual do mural de avisos */
 .aviso-item {
     border-bottom: 1px dashed #ddd;
     padding: 15px 0;
@@ -873,7 +817,6 @@ nav ul li a:hover {
     border-bottom: none;
 }
 
-/* Data do aviso */
 .aviso-item .data {
     font-weight: bold;
     color: var(--color-dark-green);
@@ -885,9 +828,9 @@ nav ul li a:hover {
     padding-left: 25px;
 }
 
-/* ==========================================================================
-   12. PÁGINA DE CONTATO
-   ========================================================================== */
+/* ---------------------------------- */
+/* CONTATO ESPECÍFICO */
+/* ---------------------------------- */
 
 .contato-main {
     padding: 40px 5%;
@@ -900,7 +843,6 @@ nav ul li a:hover {
     margin-bottom: 40px;
 }
 
-/* Container principal que agrupa informações e formulário */
 .contato-container {
     display: flex;
     gap: 40px;
@@ -911,7 +853,6 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
 
-/* Blocos de informação e formulário */
 .contact-info, .contact-form-block {
     flex: 1;
 }
@@ -923,7 +864,7 @@ nav ul li a:hover {
     margin-bottom: 25px;
 }
 
-/* Item de informação individual (ex: Endereço, Telefone) */
+/* Informações de Contato */
 .info-item {
     display: flex;
     align-items: flex-start;
@@ -963,13 +904,12 @@ nav ul li a:hover {
     box-sizing: border-box;
 }
 
-/* Seção do mapa de localização */
+/* Seção do Mapa */
 .map-section {
     text-align: center;
     padding: 30px 0;
 }
 
-/* Container do mapa incorporado (iframe) */
 .map-embed {
     margin-top: 20px;
     border: 5px solid var(--color-dark-green);
@@ -977,7 +917,7 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
-/* Responsividade para a página de contato */
+/* Responsividade */
 @media screen and (max-width: 768px) {
     .contato-container {
         flex-direction: column;

@@ -14,8 +14,11 @@
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="#">A Associação</a></li>
+                <li><a href="sobre.html">A Associação</a></li>
+                <li><a href="aulas.html">Aulas/Horários</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
                 <li class="active"><a href="cadastro.html" class="cta-nav">Matricule-se</a></li>
             </ul>
         </nav>
@@ -42,15 +45,21 @@
         <section class="form-container">
             <h2 class="form-title">Formulário de Cadastro Online</h2>
             
-            <iframe 
-                src="https://forms.gle/u2bmkCrszNNzup3z6"
-                width="100%" 
-                height="1500" 
-                frameborder="0" 
-                marginheight="0" 
-                marginwidth="0">
-                Carregando formulário...
-            </iframe>
+            <!-- 
+                ATENÇÃO: Formulários do Google Forms com upload de arquivos não podem ser incorporados (embed).
+                A solução é direcionar o usuário para o formulário em uma nova aba.
+                Substitua "SEU_LINK_DE_COMPARTILHAMENTO_DO_GOOGLE_FORMS_AQUI" pelo link que você copiou do Google Forms.
+            -->
+            <div class="form-external-link-container">
+                <p>Para se cadastrar e enviar sua foto, por favor, clique no botão abaixo. Você será redirecionado(a) para o formulário completo no Google Forms.</p>
+                <a 
+                    href="https://forms.gle/6RATeAsuHFsKi2Zd9" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="cta-button">
+                    Preencher Formulário de Cadastro <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
 
             <div class="disclaimer">
                 <p>Ao enviar o formulário, você concorda com os termos de uso e a política de privacidade da Associação.</p>

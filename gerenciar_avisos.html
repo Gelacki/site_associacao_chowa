@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Avisos | Painel Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">🥋 Admin Karatê</div>
+        <nav>
+            <ul>
+                <li><a href="admin_dashboard.html"><i class="fas fa-arrow-left"></i> Voltar ao Painel</a></li>
+                <li><a href="#" id="logoutBtn" class="cta-nav"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="admin-main">
+        <section class="admin-welcome">
+            <h1 class="section-title"><i class="fas fa-bullhorn"></i> Gerenciador de Avisos</h1>
+            <p>Adicione ou remova avisos que serão exibidos no mural da área do aluno.</p>
+        </section>
+
+        <!-- Formulário para adicionar novo aviso -->
+        <section class="form-container" style="max-width: 800px; margin: 0 auto 40px auto;">
+            <h2 class="form-title">Novo Aviso</h2>
+            <form id="avisoForm">
+                <div class="input-group" style="margin-bottom: 15px;">
+                    <label for="avisoData">Data (ex: 25/Dez):</label>
+                    <input type="text" id="avisoData" required>
+                </div>
+                <div class="input-group" style="margin-bottom: 15px;">
+                    <label for="avisoConteudo">Conteúdo do Aviso:</label>
+                    <textarea id="avisoConteudo" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Adicionar Aviso</button>
+            </form>
+        </section>
+
+        <!-- Lista de avisos existentes -->
+        <section class="mural-avisos" style="max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title">Avisos Atuais</h2>
+            <div id="listaAvisos">
+                <!-- Avisos serão carregados aqui pelo JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer admin-footer">
+        <p>Acesso Administrativo.</p>
+    </footer>
+
+    <script src="auth-script.js"></script>
+    <script src="gerenciar-avisos-script.js"></script>
+</body>
+</html>

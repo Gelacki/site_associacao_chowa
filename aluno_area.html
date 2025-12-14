@@ -67,22 +67,35 @@
         
         <section id="avisos" class="mural-avisos">
             <h2 class="section-title">Mural de Avisos</h2>
-            <div class="aviso-item">
-                <p class="data"><i class="far fa-calendar-alt"></i> 15/Dez</p>
-                <p class="conteudo"><strong>Fechamento Temporário:</strong> A academia estará fechada nos dias 24/12 e 25/12 devido às festas de fim de ano.</p>
-            </div>
-            <div class="aviso-item">
-                <p class="data"><i class="far fa-calendar-alt"></i> 20/Jan</p>
-                <p class="conteudo"><strong>Próximo Exame de Faixa:</strong> Inscrições abertas para o exame de faixas coloridas. Consulte o Sensei para confirmar sua aptidão!</p>
-            </div>
+            <div id="listaAvisosAluno"></div>
         </section>
-        
     </main>
 
     <footer class="footer">
         <p>Acesso Restrito ao Aluno. Para dúvidas, contate a secretaria.</p>
     </footer>
 
-    <script src="js/login-script.js"></script> 
-    </body>
+    <script src="auth-script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const listaAvisosContainer = document.getElementById('listaAvisosAluno');
+            const avisos = JSON.parse(localStorage.getItem('muralAvisos')) || [];
+
+            if (avisos.length === 0) {
+                listaAvisosContainer.innerHTML = '<p>Nenhum aviso importante no momento.</p>';
+                return;
+            }
+
+            avisos.forEach(aviso => {
+                const avisoElement = document.createElement('div');
+                avisoElement.className = 'aviso-item';
+                avisoElement.innerHTML = `
+                    <p class="data"><i class="far fa-calendar-alt"></i> ${aviso.data}</p>
+                    <p class="conteudo">${aviso.conteudo}</p>
+                `;
+                listaAvisosContainer.appendChild(avisoElement);
+            });
+        });
+    </script>
+</body>
 </html>
