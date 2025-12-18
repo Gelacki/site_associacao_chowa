@@ -568,7 +568,7 @@ nav ul li a:hover {
 
 /* Cartão individual para cada instrutor */
 .instructor-card {
-    width: 280px;
+    width: 200px;
     padding: 15px;
     background-color: var(--color-white);
     border: 1px solid #ddd;
