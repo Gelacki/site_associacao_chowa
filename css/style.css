@@ -4,20 +4,20 @@
 
 /* Definição das cores principais do tema para fácil manutenção */
 :root {
-    --color-dark-green: #1E4F28; /* Verde Floresta Escuro (Fundo/Header) */
-    --color-light-green: #90EE90; /* Verde Claro (Destaques) */
-    --color-accent-green: #7CFC00; /* Verde Limão (Botões CTA) */
-    --color-white: #ffffff;
-    --color-text: #EFEFEF;
+  --color-dark-green: #1e4f28; /* Verde Floresta Escuro (Fundo/Header) */
+  --color-light-green: #90ee90; /* Verde Claro (Destaques) */
+  --color-accent-green: #7cfc00; /* Verde Limão (Botões CTA) */
+  --color-white: #ffffff;
+  --color-text: #efefef;
 }
 
 /* Estilos base para todo o corpo do site */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Fundo geral claro */
-    color: var(--color-text);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Fundo geral claro */
+  color: var(--color-text);
 }
 
 /* ==========================================================================
@@ -26,48 +26,57 @@ body {
 
 /* Estilo do cabeçalho principal, fixo no topo da página */
 .header {
-    background-color: var(--color-dark-green);
-    color: var(--color-white);
-    padding: 15px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: var(--color-dark-green);
+  color: var(--color-white);
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Estilo do logo no cabeçalho */
 .logo {
-    font-size: 1.5em;
-    font-weight: bold;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 /* Estilo da lista de navegação (menu) */
 nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilo dos links do menu */
 nav ul li a {
-    color: var(--color-white);
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-    transition: background-color 0.3s;
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s;
 }
 
 /* Efeito ao passar o mouse sobre os links do menu */
 nav ul li a:hover {
-    background-color: #2c663a;
+  background-color: #2c663a;
 }
 
 /* Estilo especial para o botão "Matricule-se" na navegação */
 .cta-nav {
-    background-color: var(--color-accent-green) !important;
-    color: #000 !important;
-    border-radius: 5px;
-    font-weight: bold;
+  background-color: var(--color-accent-green) !important;
+  color: #000 !important;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.img-fundo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  z-index: -1;
 }
 
 /* ==========================================================================
@@ -76,46 +85,47 @@ nav ul li a:hover {
 
 /* Estilo do banner principal com imagem de fundo e sobreposição de cor */
 .hero-section {
-    background: url('caminho/para/sua/foto-de-karate.jpg') no-repeat center center/cover;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--color-white);
-    /* Sombra para o tema verde na imagem */
-    box-shadow: inset 0 0 0 1000px rgba(30, 79, 40, 0.6); /* Overlay verde escuro */
+  background: url("caminho/para/sua/foto-de-karate.jpg") no-repeat center
+    center/cover;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-white);
+  /* Sombra para o tema verde na imagem */
+  box-shadow: inset 0 0 0 1000px rgba(30, 79, 40, 0.6); /* Overlay verde escuro */
 }
 
 /* Título principal dentro do Hero */
 .hero-section h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+  font-size: 3em;
+  margin-bottom: 10px;
 }
 
 /* Parágrafo de subtítulo dentro do Hero */
 .hero-section p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+  font-size: 1.2em;
+  margin-bottom: 30px;
 }
 
 /* Estilo padrão para botões de "Call to Action" (Chamada para Ação) */
 .cta-button {
-    background-color: var(--color-accent-green);
-    color: #000;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1em;
-    cursor: pointer;
-    text-decoration: none; /* Se usado em <a> */
-    font-weight: bold;
-    transition: background-color 0.3s;
+  background-color: var(--color-accent-green);
+  color: #000;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  text-decoration: none; /* Se usado em <a> */
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: var(--color-light-green);
+  background-color: var(--color-light-green);
 }
 
 /* ==========================================================================
@@ -124,98 +134,101 @@ nav ul li a:hover {
 
 /* Seção de Destaques (ex: "Nossos Pilares") */
 .highlights {
-    padding: 50px 5%;
-    text-align: center;
-    background-color: var(--color-white);
-    color: #333;
+  padding: 50px 5%;
+  text-align: center;
+  background-color: var(--color-white);
+  color: #333;
 }
 
 .section-title {
-    font-size: 2em;
-    color: var(--color-dark-green);
-    margin-bottom: 40px;
+  font-size: 2em;
+  color: var(--color-dark-green);
+  margin-bottom: 40px;
 }
 
 /* Container para os cartões de destaque */
 .highlight-cards {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
 }
 
 /* Estilo individual de cada cartão de destaque */
 .card {
-    flex: 1;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: #fff;
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 /* Cor dos ícones dentro dos cartões */
 .icon-green {
-    color: var(--color-dark-green); /* Ícone no verde principal */
-    margin-bottom: 15px;
+  color: var(--color-dark-green); /* Ícone no verde principal */
+  margin-bottom: 15px;
 }
 
 /* Seção de pré-visualização da galeria na página inicial */
 .photo-preview {
-    padding: 50px 5%;
-    text-align: center;
-    background-color: #EFEFEF;
-    color: #333;
+  padding: 50px 5%;
+  text-align: center;
+  background-color: #efefef;
+  color: #333;
 }
 
 /* Grade para as fotos de preview */
 .photo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 /* Item individual da grade de fotos */
 .photo-item {
-    height: 200px;
-    background-color: #ccc; /* Placeholder */
-    border-radius: 8px;
-    /* Usar imagens reais aqui */
-    /* background: url('caminho/foto-1.jpg') no-repeat center center/cover; */
+  height: 200px;
+  background-color: #ccc; /* Placeholder */
+  border-radius: 8px;
+  /* Usar imagens reais aqui */
+  /* background: url('caminho/foto-1.jpg') no-repeat center center/cover; */
 }
 
 /* Link "Ver Galeria Completa" */
 .view-gallery-link {
-    color: var(--color-dark-green);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
+  color: var(--color-dark-green);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 .view-gallery-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Estilo para os itens da galeria na página de galeria */
 .treino {
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s, opacity 0.4s;
-    height: 100px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, opacity 0.4s;
+  height: 100px;
 }
 
 /* Estilo da imagem dentro de um item da galeria */
 .gallery-item img {
-    /* Correção: A imagem deve ocupar 100% do contêiner */
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
-    transition: transform 0.4s ease;
+  /* Correção: A imagem deve ocupar 100% do contêiner */
+  margin-top: 15px;
+  width: 200px;
+  height: 200px;
+  border: #1e4f28 4px solid;
+  border-radius: 5px;
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+  transition: transform 0.4s ease;
 }
 
 /* Efeito de zoom ao passar o mouse sobre a imagem da galeria */
 .gallery-item:hover img {
-    transform: scale(1.1); /* Efeito de zoom suave no hover */
+  transform: scale(1.1); /* Efeito de zoom suave no hover */
 }
 
 /* ==========================================================================
@@ -224,35 +237,35 @@ nav ul li a:hover {
 
 /* Banner de chamada para ação no final da página */
 .join-us-banner {
-    background-color: var(--color-dark-green);
-    padding: 40px 5%;
-    text-align: center;
-    color: var(--color-white);
+  background-color: var(--color-dark-green);
+  padding: 40px 5%;
+  text-align: center;
+  color: var(--color-white);
 }
 
 /* Estilo para um botão secundário (cor invertida) */
 .secondary-cta {
-    background-color: var(--color-white);
-    color: var(--color-dark-green);
+  background-color: var(--color-white);
+  color: var(--color-dark-green);
 }
 
 .secondary-cta:hover {
-    background-color: var(--color-light-green);
-    color: #000;
+  background-color: var(--color-light-green);
+  color: #000;
 }
 
 /* Estilo do rodapé do site */
 .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 5%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 5%;
 }
 
 .social-links a {
-    color: var(--color-light-green);
-    font-size: 1.5em;
-    margin: 0 10px;
+  color: var(--color-light-green);
+  font-size: 1.5em;
+  margin: 0 10px;
 }
 
 /* ==========================================================================
@@ -260,79 +273,79 @@ nav ul li a:hover {
    ========================================================================== */
 
 .cadastro-main {
-    padding: 40px 5%;
-    background-color: #f9f9f9; /* Fundo claro para o corpo */
-    color: #333;
+  padding: 40px 5%;
+  background-color: #f9f9f9; /* Fundo claro para o corpo */
+  color: #333;
 }
 
 .cadastro-info {
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
 .cadastro-info p {
-    font-size: 1.1em;
-    max-width: 800px;
-    margin: 0 auto 30px auto;
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
 }
 
 /* Caixa de informações destacada na página de cadastro */
 .info-box {
-    background-color: var(--color-light-green); /* Destaque verde claro */
-    color: #000;
-    padding: 25px;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: left;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-light-green); /* Destaque verde claro */
+  color: #000;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .info-box h3 {
-    margin-top: 0;
-    color: var(--color-dark-green); /* Título em verde escuro */
+  margin-top: 0;
+  color: var(--color-dark-green); /* Título em verde escuro */
 }
 
 .info-box ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .info-box ul li {
-    padding: 5px 0;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
 }
 
 .info-box i {
-    float: right;
-    font-size: 2em;
-    color: var(--color-dark-green);
+  float: right;
+  font-size: 2em;
+  color: var(--color-dark-green);
 }
 
 /* Container para o formulário (seja um iframe ou formulário normal) */
 .form-container {
-    background-color: var(--color-white);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(30, 79, 40, 0.1); /* Sombra suavemente verde */
+  background-color: var(--color-white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(30, 79, 40, 0.1); /* Sombra suavemente verde */
 }
 
 /* Título dentro do container de formulário */
 .form-title {
-    color: var(--color-dark-green);
-    border-bottom: 2px solid var(--color-accent-green);
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    text-align: center;
+  color: var(--color-dark-green);
+  border-bottom: 2px solid var(--color-accent-green);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Aviso de isenção de responsabilidade ou nota de rodapé do formulário */
 .disclaimer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #666;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666;
 }
 
 /* ==========================================================================
@@ -340,113 +353,116 @@ nav ul li a:hover {
    ========================================================================== */
 
 .horarios-main {
-    padding: 40px 5%;
-    background-color: var(--color-white);
-    color: #333;
+  padding: 40px 5%;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #333;
 }
 
 .page-intro {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
 }
 
 /* Container da tabela para permitir rolagem em telas pequenas */
 .schedule-table-container {
-    overflow-x: auto; /* Permite rolagem lateral em telas pequenas */
-    margin-bottom: 50px;
+  overflow-x: auto; /* Permite rolagem lateral em telas pequenas */
+  margin-bottom: 50px;
 }
 
 /* Estilo principal da tabela de horários */
 .schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 1em;
-    min-width: 600px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1em;
+  min-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Cabeçalho da tabela */
 .schedule-table thead tr {
-    background-color: var(--color-dark-green); /* Cabeçalho escuro */
-    color: var(--color-white);
-    text-align: left;
-    font-weight: bold;
+  background-color: var(--color-dark-green); /* Cabeçalho escuro */
+  color: var(--color-white);
+  text-align: left;
+  font-weight: bold;
 }
 
 /* Células do cabeçalho e do corpo da tabela */
-.schedule-table th, 
+.schedule-table th,
 .schedule-table td {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
 }
 
 /* Efeito de listras (zebrado) para melhor legibilidade das linhas */
 .schedule-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
 
 .schedule-table tbody tr:hover {
-    background-color: var(--color-light-green); /* Destaque verde no hover */
-    color: #000;
-    transition: background-color 0.3s;
+  background-color: var(--color-light-green); /* Destaque verde no hover */
+  color: #000;
+  transition: background-color 0.3s;
 }
 
 /* Destaques com borda colorida para identificar níveis de aula */
 .schedule-table tbody tr.beginner {
-    border-left: 5px solid yellow;
+  border-left: 5px solid yellow;
 }
 .schedule-table tbody tr.intermediate {
-    border-left: 5px solid var(--color-dark-green);
+  border-left: 5px solid var(--color-dark-green);
 }
 .schedule-table tbody tr.advanced {
-    border-left: 5px solid red; /* Cor tradicional da faixa preta ou graduação máxima */
+  border-left: 5px solid red; /* Cor tradicional da faixa preta ou graduação máxima */
 }
 
 /* Estilos para tornar a tabela responsiva em telas menores (efeito de empilhamento) */
 @media screen and (max-width: 600px) {
-    .schedule-table thead {
-        display: none; /* Esconde o cabeçalho original */
-    }
-    
-    .schedule-table, .schedule-table tbody, .schedule-table tr, .schedule-table td {
-        display: block;
-        width: 100%;
-    }
-    
-    .schedule-table tr {
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
-    }
-    
-    .schedule-table td {
-        text-align: right;
-        padding-left: 50%;
-        position: relative;
-    }
-    
-    .schedule-table td::before {
-        /* Adiciona o rótulo da coluna (do cabeçalho) como um pseudo-elemento */
-        content: attr(data-label);
-        position: absolute;
-        left: 6px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-        text-align: left;
-        font-weight: bold;
-        color: var(--color-dark-green);
-    }
+  .schedule-table thead {
+    display: none; /* Esconde o cabeçalho original */
+  }
+
+  .schedule-table,
+  .schedule-table tbody,
+  .schedule-table tr,
+  .schedule-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .schedule-table tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+  }
+
+  .schedule-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .schedule-table td::before {
+    /* Adiciona o rótulo da coluna (do cabeçalho) como um pseudo-elemento */
+    content: attr(data-label);
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+    color: var(--color-dark-green);
+  }
 }
 
 /* Bloco de chamada para ação no final da página de horários */
 .cta-horarios {
-    text-align: center;
-    padding: 30px;
-    background-color: #eee;
-    border-radius: 8px;
-    margin-top: 30px;
+  text-align: center;
+  padding: 30px;
+  background-color: #eee;
+  border-radius: 8px;
+  margin-top: 30px;
 }
 
 /* ==========================================================================
@@ -454,163 +470,163 @@ nav ul li a:hover {
    ========================================================================== */
 
 .sobre-main {
-    padding: 40px 5%;
-    background-color: var(--color-white);
-    color: #333;
+  padding: 40px 5%;
+  background-color: var(--color-white);
+  color: #333;
 }
 
 .page-intro-sobre {
-    text-align: center;
-    margin-bottom: 50px;
-    color: #333;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #333;
 }
 
 /* Bloco de conteúdo com texto de um lado e imagem do outro */
 .content-block {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    margin-bottom: 60px;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #f7f7f7;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 60px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
 }
 
 /* Parte do texto no bloco de conteúdo */
 .text-content {
-    flex: 2;
+  flex: 2;
 }
 
 /* Parte da imagem no bloco de conteúdo */
 .image-content {
-    flex: 1;
-    min-width: 250px;
-    border: 3px solid var(--color-dark-green);
-    border-radius: 8px;
-    overflow: hidden;
+  flex: 1;
+  min-width: 250px;
+  border: 3px solid var(--color-dark-green);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .image-content img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Subtítulo padrão para seções internas */
 .sub-title {
-    color: var(--color-dark-green);
-    border-bottom: 2px solid var(--color-accent-green);
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+  color: var(--color-dark-green);
+  border-bottom: 2px solid var(--color-accent-green);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .icon-green {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 /* Seção específica de Filosofia e Valores */
 .philosophy-section {
-    text-align: center;
-    padding: 40px 0;
+  text-align: center;
+  padding: 40px 0;
 }
 
 .section-title-alt {
-    color: var(--color-dark-green);
-    font-size: 2.2em;
-    margin-bottom: 10px;
+  color: var(--color-dark-green);
+  font-size: 2.2em;
+  margin-bottom: 10px;
 }
 
 .philosophy-intro {
-    max-width: 700px;
-    margin: 0 auto 30px auto;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
 }
 
 /* Grade para os cartões de valores */
 .values-grid {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 30px;
 }
 
 /* Cartão individual de valor (ex: Disciplina, Respeito) */
 .value-card {
-    flex: 1;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-top: 5px solid var(--color-dark-green); /* Destaque superior verde */
-    border-radius: 8px;
-    transition: background-color 0.3s;
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-top: 5px solid var(--color-dark-green); /* Destaque superior verde */
+  border-radius: 8px;
+  transition: background-color 0.3s;
 }
 
 .value-card:hover {
-    background-color: var(--color-light-green);
+  background-color: var(--color-light-green);
 }
 
 .value-card i {
-    color: var(--color-dark-green);
-    margin-bottom: 10px;
+  color: var(--color-dark-green);
+  margin-bottom: 10px;
 }
 
 /* Seção para apresentar os instrutores */
 .instructors-section {
-    text-align: center;
-    padding: 50px 0;
+  text-align: center;
+  padding: 50px 0;
 }
 
 .instructors-grid {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 /* Cartão individual para cada instrutor */
 .instructor-card {
-    width: 200px;
-    padding: 15px;
-    background-color: var(--color-white);
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  width: 200px;
+  padding: 15px;
+  background-color: var(--color-white);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 /* Foto do instrutor */
 .instructor-card img {
-    width: 100%;
-    max-height: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    border: 4px solid var(--color-accent-green); /* Borda verde destaque */
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 4px solid var(--color-accent-green); /* Borda verde destaque */
 }
 
 .instructor-card h3 {
-    color: var(--color-dark-green);
-    margin-bottom: 5px;
+  color: var(--color-dark-green);
+  margin-bottom: 5px;
 }
 
 /* Graduação/faixa do instrutor */
 .instructor-card .rank {
-    font-style: italic;
-    color: #666;
-    margin-bottom: 10px;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
 }
 
 /* Responsividade para a página Sobre Nós */
 @media screen and (max-width: 768px) {
-    .content-block {
-        flex-direction: column;
-        text-align: center;
-    }
-    .image-content {
-        order: -1; /* Move a imagem para cima no celular */
-    }
-    .values-grid {
-        flex-direction: column;
-    }
+  .content-block {
+    flex-direction: column;
+    text-align: center;
+  }
+  .image-content {
+    order: -1; /* Move a imagem para cima no celular */
+  }
+  .values-grid {
+    flex-direction: column;
+  }
 }
 
 /* ==========================================================================
@@ -618,81 +634,83 @@ nav ul li a:hover {
    ========================================================================== */
 
 .login-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: var(--color-dark-green); /* Fundo da tela de login em verde escuro */
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(
+    --color-dark-green
+  ); /* Fundo da tela de login em verde escuro */
+  padding: 20px;
 }
 
 /* Container do formulário de login */
 .login-container {
-    background-color: var(--color-white);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
+  background-color: var(--color-white);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
 }
 
 .login-header {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .login-header .section-title {
-    color: var(--color-dark-green);
-    margin-top: 10px;
+  color: var(--color-dark-green);
+  margin-top: 10px;
 }
 
 .icon-green {
-    color: var(--color-accent-green); /* Ícone no verde vibrante */
+  color: var(--color-accent-green); /* Ícone no verde vibrante */
 }
 
 .input-group {
-    text-align: left;
-    margin-bottom: 20px;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .input-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
 }
 
 .input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 /* Botão de entrar */
 .login-button {
-    width: 100%;
-    margin-top: 10px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 /* Rodapé do formulário de login com link para voltar */
 .login-footer a {
-    color: var(--color-dark-green);
-    text-decoration: none;
-    margin-top: 15px;
-    display: block;
+  color: var(--color-dark-green);
+  text-decoration: none;
+  margin-top: 15px;
+  display: block;
 }
 
 .login-footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Mensagem de erro no login */
 .error-message {
-    color: red;
-    margin-top: 15px;
-    font-weight: bold;
+  color: red;
+  margin-top: 15px;
+  font-weight: bold;
 }
 
 /* ==========================================================================
@@ -700,91 +718,115 @@ nav ul li a:hover {
    ========================================================================== */
 
 .admin-main {
-    padding: 40px 5%;
-    background-color: #f0f4f7; /* Fundo cinza claro */
-    min-height: calc(100vh - 120px);
-    color: #333;
+  padding: 40px 5%;
+  background-color: #f0f4f7; /* Fundo cinza claro */
+  min-height: calc(100vh - 120px);
+  color: #333;
 }
 
 /* Bloco de boas-vindas do admin */
 .admin-welcome {
-    text-align: center;
-    margin-bottom: 50px;
-    padding: 20px;
-    background-color: var(--color-white);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .admin-welcome .section-title {
-    color: var(--color-dark-green);
-    font-size: 2.5em;
+  color: var(--color-dark-green);
+  font-size: 2.5em;
 }
 
 /* Grade para as ferramentas do admin */
 .admin-tools-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
 /* Cartão de ferramenta individual */
 .tool-card {
-    background-color: var(--color-white);
-    padding: 30px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+  background-color: var(--color-white);
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
 .tool-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .tool-card i {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .tool-card h3 {
-    color: #333;
-    margin-top: 0;
+  color: #333;
+  margin-top: 0;
 }
 
 /* Link dentro do cartão de ferramenta */
 .admin-link {
-    display: block;
-    margin-top: 15px;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--color-white);
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color-white);
 }
 
 /* Cores específicas para cada tipo de cartão de ferramenta */
-.admin-green { border-bottom: 5px solid var(--color-dark-green); }
-.admin-green i { color: var(--color-dark-green); }
-.admin-green .admin-link { background-color: var(--color-dark-green); }
+.admin-green {
+  border-bottom: 5px solid var(--color-dark-green);
+}
+.admin-green i {
+  color: var(--color-dark-green);
+}
+.admin-green .admin-link {
+  background-color: var(--color-dark-green);
+}
 
-.admin-blue { border-bottom: 5px solid #2874a6; }
-.admin-blue i { color: #2874a6; }
-.admin-blue .admin-link { background-color: #2874a6; }
+.admin-blue {
+  border-bottom: 5px solid #2874a6;
+}
+.admin-blue i {
+  color: #2874a6;
+}
+.admin-blue .admin-link {
+  background-color: #2874a6;
+}
 
-.admin-yellow { border-bottom: 5px solid #f39c12; }
-.admin-yellow i { color: #f39c12; }
-.admin-yellow .admin-link { background-color: #f39c12; }
+.admin-yellow {
+  border-bottom: 5px solid #f39c12;
+}
+.admin-yellow i {
+  color: #f39c12;
+}
+.admin-yellow .admin-link {
+  background-color: #f39c12;
+}
 
-.admin-red { border-bottom: 5px solid #c0392b; }
-.admin-red i { color: #c0392b; }
-.admin-red .admin-link { background-color: #c0392b; }
+.admin-red {
+  border-bottom: 5px solid #c0392b;
+}
+.admin-red i {
+  color: #c0392b;
+}
+.admin-red .admin-link {
+  background-color: #c0392b;
+}
 
 /* Rodapé específico para páginas de admin */
 .admin-footer {
-    background-color: #2c3e50;
-    color: #fff;
-    font-size: 0.9em;
+  background-color: #2c3e50;
+  color: #fff;
+  font-size: 0.9em;
 }
 
 /* ==========================================================================
@@ -792,97 +834,120 @@ nav ul li a:hover {
    ========================================================================== */
 
 .aluno-main {
-    padding: 40px 5%;
-    background-color: #f7fcf7; /* Fundo muito claro e levemente verde */
-    min-height: calc(100vh - 120px);
-    color: #333;
+  padding: 40px 5%;
+  background-color: #f7fcf7; /* Fundo muito claro e levemente verde */
+  min-height: calc(100vh - 120px);
+  color: #333;
 }
 
 /* Bloco de boas-vindas do aluno */
 .aluno-welcome {
-    text-align: center;
-    margin-bottom: 50px;
-    padding: 20px;
-    background-color: var(--color-white);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .aluno-welcome .section-title {
-    color: var(--color-dark-green);
-    font-size: 2.5em;
+  color: var(--color-dark-green);
+  font-size: 2.5em;
 }
 
 /* Grade de ferramentas da área do aluno */
 .aluno-tools-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
 }
 
 /* Link dentro do cartão de ferramenta do aluno */
 .aluno-link {
-    display: block;
-    margin-top: 15px;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--color-white);
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color-white);
 }
 
 /* Cores temáticas para os cartões da área do aluno */
-.aluno-green { border-bottom: 5px solid var(--color-dark-green); }
-.aluno-green i { color: var(--color-dark-green); }
-.aluno-green .aluno-link { background-color: var(--color-dark-green); } /* Cadastro / Faixa Verde */
+.aluno-green {
+  border-bottom: 5px solid var(--color-dark-green);
+}
+.aluno-green i {
+  color: var(--color-dark-green);
+}
+.aluno-green .aluno-link {
+  background-color: var(--color-dark-green);
+} /* Cadastro / Faixa Verde */
 
-.aluno-blue { border-bottom: 5px solid #0056b3; }
-.aluno-blue i { color: #0056b3; }
-.aluno-blue .aluno-link { background-color: #0056b3; } /* Horários / Faixa Azul */
+.aluno-blue {
+  border-bottom: 5px solid #0056b3;
+}
+.aluno-blue i {
+  color: #0056b3;
+}
+.aluno-blue .aluno-link {
+  background-color: #0056b3;
+} /* Horários / Faixa Azul */
 
-.aluno-yellow { border-bottom: 5px solid #f9a602; }
-.aluno-yellow i { color: #f9a602; }
-.aluno-yellow .aluno-link { background-color: #f9a602; } /* Galeria / Faixa Amarela */
+.aluno-yellow {
+  border-bottom: 5px solid #f9a602;
+}
+.aluno-yellow i {
+  color: #f9a602;
+}
+.aluno-yellow .aluno-link {
+  background-color: #f9a602;
+} /* Galeria / Faixa Amarela */
 
-.aluno-red { border-bottom: 5px solid #dc3545; }
-.aluno-red i { color: #dc3545; }
-.aluno-red .aluno-link { background-color: #dc3545; } /* Avisos / Destaque */
-
+.aluno-red {
+  border-bottom: 5px solid #dc3545;
+}
+.aluno-red i {
+  color: #dc3545;
+}
+.aluno-red .aluno-link {
+  background-color: #dc3545;
+} /* Avisos / Destaque */
 
 /* Estilo para o Mural de Avisos (usado na área do aluno e na gestão de avisos) */
 .mural-avisos {
-    background-color: var(--color-white);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .mural-avisos .section-title {
-    color: var(--color-dark-green);
-    margin-bottom: 20px;
+  color: var(--color-dark-green);
+  margin-bottom: 20px;
 }
 
 /* Item individual do mural de avisos */
 .aviso-item {
-    border-bottom: 1px dashed #ddd;
-    padding: 15px 0;
+  border-bottom: 1px dashed #ddd;
+  padding: 15px 0;
 }
 
 .aviso-item:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 /* Data do aviso */
 .aviso-item .data {
-    font-weight: bold;
-    color: var(--color-dark-green);
-    margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--color-dark-green);
+  margin-bottom: 5px;
 }
 
 .aviso-item .conteudo {
-    margin: 5px 0;
-    padding-left: 25px;
+  margin: 5px 0;
+  padding-left: 25px;
 }
 
 /* ==========================================================================
@@ -890,96 +955,97 @@ nav ul li a:hover {
    ========================================================================== */
 
 .contato-main {
-    padding: 40px 5%;
-    background-color: #f9f9f9;
-    color: #333;
+  padding: 40px 5%;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 .page-intro-contato {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 /* Container principal que agrupa informações e formulário */
 .contato-container {
-    display: flex;
-    gap: 40px;
-    margin-bottom: 60px;
-    background-color: var(--color-white);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+  background-color: var(--color-white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
 
 /* Blocos de informação e formulário */
-.contact-info, .contact-form-block {
-    flex: 1;
+.contact-info,
+.contact-form-block {
+  flex: 1;
 }
 
 .sub-title {
-    color: var(--color-dark-green);
-    border-bottom: 2px solid var(--color-accent-green);
-    padding-bottom: 5px;
-    margin-bottom: 25px;
+  color: var(--color-dark-green);
+  border-bottom: 2px solid var(--color-accent-green);
+  padding-bottom: 5px;
+  margin-bottom: 25px;
 }
 
 /* Item de informação individual (ex: Endereço, Telefone) */
 .info-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
 .info-item i {
-    font-size: 1.5em;
-    color: var(--color-dark-green);
-    margin-right: 15px;
-    margin-top: 5px;
+  font-size: 1.5em;
+  color: var(--color-dark-green);
+  margin-right: 15px;
+  margin-top: 5px;
 }
 
 .info-item h4 {
-    margin: 0 0 5px 0;
-    color: #444;
+  margin: 0 0 5px 0;
+  color: #444;
 }
 
 /* Formulário de Contato */
 .input-group-contact {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .input-group-contact label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .input-group-contact input[type="text"],
 .input-group-contact input[type="email"],
 .input-group-contact textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 /* Seção do mapa de localização */
 .map-section {
-    text-align: center;
-    padding: 30px 0;
+  text-align: center;
+  padding: 30px 0;
 }
 
 /* Container do mapa incorporado (iframe) */
 .map-embed {
-    margin-top: 20px;
-    border: 5px solid var(--color-dark-green);
-    border-radius: 8px;
-    overflow: hidden;
+  margin-top: 20px;
+  border: 5px solid var(--color-dark-green);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 /* Responsividade para a página de contato */
 @media screen and (max-width: 768px) {
-    .contato-container {
-        flex-direction: column;
-    }
+  .contato-container {
+    flex-direction: column;
+  }
 }
