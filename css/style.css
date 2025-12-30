@@ -188,6 +188,13 @@ nav ul li a:hover {
 /* Item individual da grade de fotos */
 .photo-item {
   height: 200px;
+  background-color: #cccccc00; /* Placeholder */
+  border-radius: 8px;
+  /* Usar imagens reais aqui */
+  /* background: url('caminho/foto-1.jpg') no-repeat center center/cover; */
+}
+.photo-item img {
+  height: 200px;
   background-color: #ccc; /* Placeholder */
   border-radius: 8px;
   /* Usar imagens reais aqui */
